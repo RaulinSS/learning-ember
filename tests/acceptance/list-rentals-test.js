@@ -60,4 +60,3 @@ test('should show details for a specific rental', function (assert) {
     assert.equal(find('.description').length, 1, 'should list a description of the property');
   });
 });
-
