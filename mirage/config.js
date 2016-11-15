@@ -39,4 +39,31 @@ export default function() {
       }]
     };
   });
+
+  this.get('/players', function() {
+    return {
+      data: [{
+        type: 'players',
+        id: 'BE',
+        attributes: {
+          name: 'thiago del 8',
+          job: 'backend engineer'
+        }
+      }, {
+        type: 'players',
+        id: 'QA',        
+        attributes: {
+          name: 'bruno del 8',
+          job: 'qa engineer'          
+        }
+      }, {
+        type: 'players',
+        id: 'FE',        
+        attributes: {
+          name: 'raul soto',
+          job: 'frontend engineer'          
+        }
+      }]
+    };
+  });
 }

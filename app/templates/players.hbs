@@ -1,0 +1,14 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome!</h2>
+  <p>We are the Curitiba team.</p>  
+</div>
+
+{{#each model as |player|}}
+  <article class="listing">
+    <h3>{{player.name}}</h3>
+    <div class="detail owner">
+      <span>Job:</span> {{player.job}}
+    </div>    
+  </article>
+{{/each}}
