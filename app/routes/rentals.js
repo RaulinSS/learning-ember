@@ -9,8 +9,4 @@ when a user enters the rentals route. */
 Ember Data will make a GET request to /rentals. */
 
 export default Ember.Route.extend({
-    model(){
-        /* modelName = rental */
-        //return this.get('store').findAll('rental');
-    }
 });

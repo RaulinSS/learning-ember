@@ -9,8 +9,11 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('contact');
-  this.route('rentals');
-  this.route('players');
+  // This tells Ember that it is a sub-route and will be accessed 
+  // through localhost:4200/rentals/show
+  this.route('rentals', function() {
+    this.route('show', { path: '/:rental_id' });
+  });
 });
 
 export default Router;
